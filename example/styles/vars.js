@@ -1,4 +1,4 @@
-import { setStyleVars, hex } from 'larana-js'
+const { setStyleVars, hex } = require('larana-js')
 
 const initStyleVars = () => {
 	setStyleVars({
@@ -21,4 +21,4 @@ const initStyleVars = () => {
 	}, 'dark')
 }
 
-export { initStyleVars }
+module.exports = { initStyleVars }

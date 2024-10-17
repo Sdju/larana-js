@@ -1,14 +1,14 @@
-import {
+const {
 	Page,
 	Style,
 	LayoutComponent,
 	TextComponent,
-} from 'larana-js'
+} = require('larana-js')
 
-import { styles } from '../styles'
-import { HeaderComponent } from '../components'
+const { styles } = require('../styles')
+const { HeaderComponent } = require('../components')
 
-export class TodoPage extends Page {
+class TodoPage extends Page {
 	title = 'Todo'
 
 	init() {
@@ -37,4 +37,8 @@ export class TodoPage extends Page {
 			],
 		})
 	}
+}
+
+module.exports = {
+	TodoPage,
 }

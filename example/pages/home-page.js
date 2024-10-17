@@ -1,15 +1,15 @@
-import {
+const {
 	Page,
 	Style,
 	LayoutComponent,
 	TextComponent,
 	LinkComponent,
-} from 'larana-js'
+} = require('larana-js')
 
-import { styles } from '../styles'
-import { HeaderComponent, CircleComponent } from '../components'
+const { styles } = require('../styles')
+const { HeaderComponent, CircleComponent } = require('../components')
 
-export class HomePage extends Page {
+class HomePage extends Page {
 	title = 'Home'
 
 	init() {
@@ -45,4 +45,8 @@ export class HomePage extends Page {
 			],
 		})
 	}
+}
+
+module.exports = {
+	HomePage,
 }
