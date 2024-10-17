@@ -61,7 +61,6 @@ class LaranaApp {
 	server(req, res) {
 		const route = this.router.resolve(req.url)
 		const sessionId = this.stateManager.generateSessionId()
-		console.log(route)
 
 		const PageClass = route.page
 
@@ -76,7 +75,8 @@ class LaranaApp {
 			config: {
 				storePreviousRender: this.config.storePreviousRender,
 				rerenderDelay: 1000 / this.config.maxFPS,
-			}
+			},
+			req,
 		})
 
 		const session = this.stateManager.addSession(sessionId, {

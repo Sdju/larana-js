@@ -1,8 +1,8 @@
-const { Style, BaseComponent, LayoutComponent, TextComponent, useStyleVar } = require('larana-js')
+import { Style, BaseComponent, LayoutComponent, TextComponent, useStyleVar } from 'larana-js'
 
-const { styles } = require('../styles')
+import { styles } from '../styles'
 
-class HeaderComponent extends BaseComponent {
+export class HeaderComponent extends BaseComponent {
 	items = [
 		{ label: 'Home', name: 'home' },
 		{ label: 'Bar chart', name: 'home' },
@@ -31,5 +31,3 @@ class HeaderComponent extends BaseComponent {
 		]
 	}
 }
-
-module.exports = { HeaderComponent }

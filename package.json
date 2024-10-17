@@ -32,6 +32,8 @@
 	"dependencies": {
 		"@laranatech/schemer": "^1.0.6",
 		"canvas": "^2.11.2",
-		"ws": "^8.18.0"
+		"example": "link:C:/pr/my/larana-js/example",
+		"ws": "^8.18.0",
+		"larana-js": "file:./"
 	}
 }

@@ -1,10 +1,8 @@
-const { MemoryStateManager, ServerRenderer, LaranaApp, DefaultRouter } = require('larana-js')
+import { MemoryStateManager, ServerRenderer, LaranaApp, DefaultRouter } from 'larana-js'
 
-const config = require('./config.js')
-
-const { routes } = require('./routes.js')
-
-const { initStyleVars, initStyles } = require('./styles')
+import { config } from './config.js'
+import { routes } from './routes.js'
+import { initStyleVars, initStyles } from './styles'
 
 initStyleVars()
 initStyles()
@@ -32,3 +30,5 @@ const app = new LaranaApp({
 })
 
 app.run()
+
+console.log('test')

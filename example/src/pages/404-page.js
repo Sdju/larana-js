@@ -1,8 +1,8 @@
-const { Page, LayoutComponent, TextComponent } = require('larana-js')
+import { Page, LayoutComponent, TextComponent } from 'larana-js'
 
-const { styles } = require('../styles')
+import { styles } from '../styles'
 
-class NotFoundPage extends Page {
+export class NotFoundPage extends Page {
 	init() {
 		this.root = new LayoutComponent({
 			style: styles.get('body'),
@@ -19,5 +19,3 @@ class NotFoundPage extends Page {
 		})
 	}
 }
-
-module.exports = { NotFoundPage }

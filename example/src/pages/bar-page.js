@@ -1,17 +1,17 @@
-const {
+import {
 	Page,
 	Style,
 	useStyleVar,
 	LayoutComponent,
 	TextComponent,
 	BarChartComponent,
-} = require('larana-js')
+} from 'larana-js'
 
-const { styles } = require('../styles')
+import { styles } from '../styles'
 
-const { HeaderComponent } = require('../components')
+import { HeaderComponent } from '../components'
 
-class BarPage extends Page {
+export class BarPage extends Page {
 	loadingTextTimeout = null
 
 	title = 'Bar chart page'
@@ -112,8 +112,4 @@ class BarPage extends Page {
 			clearTimeout(this.loadingTextTimeout)
 		}, 2000)
 	}
-}
-
-module.exports = {
-	BarPage,
 }

@@ -1,8 +1,10 @@
-const { Style, hex, rgb, rgba, useStyleVar } = require('larana-js')
+import { Style, hex, rgb, rgba, useStyleVar } from 'larana-js'
 
-const styles = new Map()
+export * from './vars.js'
 
-const initStyles = () => {
+export const styles = new Map()
+
+export const initStyles = () => {
 	const text = new Style({
 		fontWeight: useStyleVar('fontWeight'),
 		fg: useStyleVar('fg'),
@@ -24,10 +26,3 @@ const initStyles = () => {
 		borderColor: useStyleVar('accent'),
 	}))
 }
-
-module.exports = {
-	styles,
-	initStyles,
-	...require('./vars.js'),
-}
-

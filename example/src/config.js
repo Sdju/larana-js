@@ -1,6 +1,6 @@
-const { createConfig } = require('larana-js')
+import { createConfig } from 'larana-js'
 
-module.exports = createConfig({
+export const config = createConfig({
 	debug: true,
 	port: 3000,
 	wsPath: 'ws://localhost:3000/',

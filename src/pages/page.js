@@ -25,8 +25,9 @@ class Page {
 
 	rerenderTimeout = null
 
-	constructor({ state, meta, config, sessionId }) {
+	constructor({ state, meta, config, sessionId, req }) {
 		this.sessionId = sessionId
+		this.req = req
 
 		if (state !== undefined) {
 			this.state = state
