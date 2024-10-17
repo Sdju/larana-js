@@ -1,11 +1,14 @@
-import { Page, LayoutComponent, TextComponent } from 'larana-js'
+import { Page, LayoutComponent, TextComponent, Style } from 'larana-js'
 
 import { styles } from '../styles'
 
 export class NotFoundPage extends Page {
-	init() {
-		this.root = new LayoutComponent({
-			style: styles.get('body'),
+	prepareRoot({ w, h }) {
+		return new LayoutComponent({
+			style: new Style({
+				...styles.get('body').json(),
+				direction: w > 1028 ? 'row' : 'column',
+			}),
 			children: [
 				new TextComponent({
 					text: '404',

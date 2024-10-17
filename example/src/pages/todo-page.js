@@ -11,6 +11,12 @@ import { HeaderComponent } from '../components'
 export class TodoPage extends Page {
 	title = 'Todo'
 
+	init() {
+		this.state = {
+			items: [],
+		}
+	}
+
 	prepareRoot({ w, h }) {
 		return new LayoutComponent({
 			style: new Style({
