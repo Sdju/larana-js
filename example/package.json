@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "pnpm vite-node ./src/index.js",
+    "dev": "pnpm vite-node ./src/vuerana/example/index.ts",
     "build": "vite build",
     "preview": "vite preview"
   },
