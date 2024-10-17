@@ -67,7 +67,7 @@ function vueRoutesToLaranaRoutes(ctx: VueranaVueContext) {
         this.hello = this.state.rootChild
 
         const root = app.mount(this.state.rootChild)
-        root.$router.push(this.req.url)
+        root.$router.push(this.route.url)
       } 
 
       prepareRoot() {

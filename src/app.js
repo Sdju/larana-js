@@ -75,7 +75,7 @@ class LaranaApp {
 				storePreviousRender: this.config.storePreviousRender,
 				rerenderDelay: 1000 / this.config.maxFPS,
 			},
-			req,
+			route,
 		})
 
 		const session = { page, lang: 'en', url: req.url, theme: 'main' }

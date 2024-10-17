@@ -3,6 +3,7 @@ const { LayoutComponent } = require('../ui/components')
 
 class Page {
 	sessionId = ''
+	route = null
 
 	state = {}
 	meta = {}
@@ -25,9 +26,9 @@ class Page {
 
 	rerenderTimeout = null
 
-	constructor({ state, meta, config, sessionId, req }) {
+	constructor({ state, meta, config, sessionId, route }) {
 		this.sessionId = sessionId
-		this.req = req
+		this.route = route
 
 		if (state !== undefined) {
 			this.state = state
